@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue / Primeiro Passos</title>
+    <script src="https://unpkg.com/vue@next"></script>
+</head>
+<body>
+    <div id="app">
+        <login-form/>
+       <hr>
+       <h1 v-if="teste">Está visivel dependendo da variável 'teste'</h1>
+       <h1 v-else-if="teste2">Está visivel dependendo da variável 'teste2'</h1>
+       <h1 v-else>Está visivel dependendo das duas de cima</h1>
+       <hr>
+       <button @click="toogleAwesome">Toggle</button>
+       <h1 v-if="awesome">Vue is awesome!</h1>
+       <h1 v-else>Oh no 😢</h1>
+    </div>
+    <script src="./prod.js" ></script>
+</body>
+</html>
